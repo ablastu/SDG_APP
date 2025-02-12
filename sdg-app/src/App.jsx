@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Continent from './components/Continent';
 import Navbar from './components/Navbar';
-import { getCountriesByContinent } from './services/api'; // Ajusta la ruta
+import { getCountriesByContinent } from './services/api'; 
 
 function App() {
   const [continents, setContinents] = useState({});

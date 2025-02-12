@@ -1,4 +1,3 @@
-// components/Continent.jsx
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
@@ -38,9 +37,9 @@ const Continent = ({ continents }) => {
             {
                 label: "Población por país",
                 data: filteredCountries.map((country) => country.population),
-                backgroundColor: "rgba(153, 102, 255, 0.2)",
-                borderColor: "rgba(153, 102, 255, 1)",
-                borderWidth: 1,
+                backgroundColor: 'rgba(96, 196, 196, 0.2)',
+                borderColor: 'rgb(6, 63, 63)',
+                borderWidth: 2,
             },
         ],
     };

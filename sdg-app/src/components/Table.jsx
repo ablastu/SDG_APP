@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Table = ({ data, columns }) => {
     return (
-        <div className="overflow-x-auto m-10">
+        <div className="m-10">
             <table className="min-w-full border border-gray-300 shadow-md">
                 <thead className="bg-gray-100">
                     <tr>
