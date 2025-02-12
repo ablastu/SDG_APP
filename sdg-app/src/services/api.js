@@ -29,5 +29,7 @@ export const getCountriesByContinent = async () => {
         });
     });
 
+    console.log('groupedByContinents:', groupedByContinent);
+
     return groupedByContinent;
 };
