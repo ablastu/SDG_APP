@@ -4,6 +4,7 @@ import { Bar } from 'react-chartjs-2';
 import PropTypes from 'prop-types';
 import Filter from './Filter';
 import Table from './Table';
+import { useMemo } from 'react';
 
 import {
     Chart as ChartJS,
@@ -20,7 +21,8 @@ ChartJS.register(
 
 const Continent = ({ continents }) => {
     const { continentName } = useParams();
-    const countries = continents[continentName] || [];
+    // const countries = continents[continentName] || [];
+    const countries = useMemo(() => continents[continentName] || [], [continents, continentName]);
     const [filteredCountries, setFilteredCountries] = useState(countries);
     const [minPopulation, setMinPopulation] = useState(0);
 
@@ -37,8 +39,8 @@ const Continent = ({ continents }) => {
             {
                 label: "Población por país",
                 data: filteredCountries.map((country) => country.population),
-                backgroundColor: 'rgba(96, 196, 196, 0.2)',
-                borderColor: 'rgb(6, 63, 63)',
+                backgroundColor: 'rgb(159, 205, 254)',
+                borderColor: 'rgb(0, 102, 203)',
                 borderWidth: 2,
             },
         ],

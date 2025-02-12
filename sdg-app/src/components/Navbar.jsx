@@ -6,7 +6,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = ({continents}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); 
-  const continentNames = Object.keys(continents); //Obtiene solo las claves del objeto
+  const continentNames = Object.keys(continents); 
 
   return (
     <nav className="bg-white shadow-md">

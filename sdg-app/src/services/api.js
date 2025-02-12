@@ -25,11 +25,8 @@ export const getCountriesByContinent = async () => {
         groupedByContinent[continent].push({
             name: country.name.common, 
             population: country.population, 
-            flag: country.flags.png, 
         });
     });
-
-    console.log('groupedByContinents:', groupedByContinent);
 
     return groupedByContinent;
 };

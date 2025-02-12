@@ -45,8 +45,8 @@ const Home = ({ continents }) => {
             {
                 label: 'Población por continente',
                 data: Object.values(filteredContinents).map(countries => calculateTotalPopulation(countries)),
-                backgroundColor: 'rgba(96, 196, 196, 0.2)',
-                borderColor: 'rgb(6, 63, 63)',
+                backgroundColor: 'rgb(159, 205, 254)',
+                borderColor: 'rgb(0, 102, 203)',
                 borderWidth: 2,
             },
         ],
