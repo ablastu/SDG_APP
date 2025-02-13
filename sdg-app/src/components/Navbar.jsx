@@ -12,14 +12,13 @@ const Navbar = ({continents}) => {
     <nav className="bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          {/* Logo */}
+
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
               <img src={logo} alt="Logo" className="h-10 w-auto lg:h-20" />
             </Link>
           </div>
 
-          {/* Menú para pantallas grandes */}
           <div className="hidden md:flex md:items-center md:space-x-6">
             {continentNames.map((continent) => (
               <Link
@@ -32,7 +31,6 @@ const Navbar = ({continents}) => {
             ))}
           </div>
 
-          {/* Botón de menú para móviles */}
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -64,8 +62,7 @@ const Navbar = ({continents}) => {
           </div>
         </div>
       </div>
-
-      {/* Menú desplegable para móviles */}
+                  
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
